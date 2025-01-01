@@ -260,7 +260,7 @@ body {
       width: 250px;
       height: 100%;
       padding: 20px;
-
+      overflow-y: auto;
   }
 
  
@@ -310,6 +310,8 @@ color: rebeccapurple;
   .anchor:hover::before {
     transform: scaleX(1);
   }
+
+ 
 
   /* Стиль для Н2 */
 
