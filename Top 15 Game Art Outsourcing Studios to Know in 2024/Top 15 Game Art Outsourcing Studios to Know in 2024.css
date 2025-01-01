@@ -105,6 +105,9 @@ body {
         display: flex;
         align-items: center;
     }
+    .title-text-for-mobile {
+      display: none;
+    }
 
     .first-section {
         padding: 50px 0;
@@ -118,8 +121,6 @@ body {
     }
     .main-section {
         min-height: 400px;
-        padding-top: 0px;
-        margin-top: 140px;
     }
     .first-section {
         padding: 20px 0;
@@ -128,14 +129,16 @@ body {
       margin: 0 auto;
     }
     .title-text {
-        text-align: center;
-        font-size: 30px;
-   position:absolute;
-   top: 0;
-   margin: 20px auto;
-   color: red;
+      display: none;
+    }
+  .title-text-for-mobile {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }   
 
-        }
         p {
             font-size: 15px;
         }
