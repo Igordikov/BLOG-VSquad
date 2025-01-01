@@ -368,6 +368,7 @@ color: rebeccapurple;
     }
     .main-section {
         min-height: 400px;
+      align-items: center;
     }
     .content-section {
         padding: 20px 0;
@@ -398,6 +399,7 @@ color: rebeccapurple;
 
         .studio-card {
           margin: 0 auto;
+        
         }
 }
 
