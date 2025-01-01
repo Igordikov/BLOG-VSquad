@@ -149,6 +149,87 @@ body {
         background-color:#D3D3D3;
     }
 
+/* Карточки для студий */
+    .studio-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin: 10px;
+      width: 100%;
+      background-color:azure;
+  }
+  
+  .studio-card:hover {
+      transform: translateY(-5px);
+  }
+  
+  .studio-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+  }
+  
+  .studio-card-content {
+      padding: 20px;
+  }
+  
+  .studio-card-title {
+      font-size: 40px;
+      font-weight: bold;
+      color: red;
+      margin-bottom: 10px;
+  }
+  
+  .studio-card-description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+      line-height: 1.5;
+  }
+  
+  .studio-card-link {
+      font-size: 1rem;
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+  }
+  
+  .studio-card-link:hover {
+      color: #0056b3;
+      text-decoration: underline;
+  }
+  
+
+/* Список студий */
+
+.elegant-list {
+  list-style-type: none; /* Убираем стандартные маркеры */
+  padding-left: 0;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.elegant-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Разделители между элементами */
+  transition: background-color 0.3s ease;
+}
+
+.elegant-list li:hover {
+  background-color: #f7f7f7; /* Легкий эффект при наведении */
+}
+
+.elegant-list li:last-child {
+  border-bottom: none; /* Убираем разделитель на последнем элементе */
+}
+
+
+
+
+
     /* sidebar */
 
     .sidebar {
@@ -212,7 +293,6 @@ color: rebeccapurple;
   /* Стиль для Н2 */
 
   .subtitle {
-    font-size: 2rem;
     font-weight: bold;
     background: linear-gradient(90deg, #bbbbbb 50%, #000000 50%);
     background-size: 200% 100%;
