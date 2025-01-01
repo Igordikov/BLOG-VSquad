@@ -604,8 +604,41 @@
                                                        market launch.
                                                 </p>
                           
-            
-                                                <h2 class="subtitle" id="faq">FAQ</h2>
+            <!-- FAQ -->
+
+            <section id="faq">
+                <div class="container">
+                  <h2 class="subtitle" id="faq">FAQ</h2>
+                  <div class="faq-item">
+                    <button class="faq-question">What is the typical timeline for game art production when working with an outsourcing studio?
+                    </button>
+                    <div class="faq-answer">
+                      <p>Timelines can be different. It’s based on project complexity. They range from a few weeks for smaller assets to several months 
+                        for complete art development. Early planning and clear communication help with the process.</p>
+                    </div>
+                  </div>
+              
+                  <div class="faq-item">
+                    <button class="faq-question">Are there any risks involved in outsourcing game art, and how can they be mitigated?
+                    </button>
+                    <div class="faq-answer">
+                      <p>Risks are miscommunication and quality control issues. Mitigation is a clear guideline, regular updates, and reviews.
+                    </p>
+                    </div>
+                  </div>
+              
+                  <div class="faq-item">
+                    <button class="faq-question">How can I ensure that the art style remains consistent across different outsourcing teams working on the same project?</button>
+                    <div class="faq-answer">
+                      <p>Establish detailed style guides and visual references, do regular check-ins, and make all teams know the same creative direction to maintain a unified style.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+              </section>
+              
+                                               
+                                            
                     
                     
 
@@ -617,7 +650,7 @@
         <aside class="sidebar">
             
             <nav>
-                <h2 class="content-list-title">Content list</h2>
+                <h2 class="content-list-title subtitle">Content list</h2>
                 <ul>
                     <li><a class="sidebar-item" href="#subtitle-1">Why Outsource Game Art?</a></li>
                     <li><a class="sidebar-item" href="#subtitle-2">How to Choose the Best Game Art Outsourcing Studio</a></li>
@@ -664,6 +697,21 @@ sidebarLinks.forEach(link => {
     this.classList.add('active');
   });
 });
+
+</script>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach((button) => {
+  button.addEventListener('click', () => {
+    const answer = button.nextElementSibling;
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+    } else {
+      answer.style.display = 'block';
+    }
+  });
+});
+
 </script>
 
 </body>
