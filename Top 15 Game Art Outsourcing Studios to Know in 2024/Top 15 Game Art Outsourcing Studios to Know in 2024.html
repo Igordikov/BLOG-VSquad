@@ -29,7 +29,7 @@
                  AAA projects even if you’re new to game dev. In 2024, game development outsourcing keeps being relevant. 
                  With it, developers can use it for different purposes, apply a wide range of art styles and expertise.
                   No matter if you’re working on AAA games or smaller mobile ones, you’ll need to choose the right
-                   <a href="https://vsquad.art/" target="_blank"><b style="color: blue;">game art outsourcing studio</b></a>. But how to? </p>
+                   <a class="anchor" href="https://vsquad.art/" target="_blank"><b style="color: blue;">game art outsourcing studio</b></a>. But how to? </p>
         <img src="./Арт/The Importance of Game Art Outsourcing in 2024.webp" alt="A group of people working on computers in an office.">
         
         <h2 class="subtitle" id="subtitle-1">Why Outsource Game Art?</h2>
@@ -53,21 +53,50 @@
                  is key to creating a unique and immersive player experience.
                 </p>
 
-                <img src="./Арт/The Benefits of Game Art Outsourcing.webp" alt="An old computer monitor displaying a colorful, surreal landscape, with fragments bursting outwards.">
+                <div class="image-container"><img src="./Арт/The Benefits of Game Art Outsourcing.webp" alt="An old computer monitor displaying a colorful, surreal landscape, with fragments bursting outwards."></div>
         
+                <p>
+                    A crucial part of the outsourcing process is the initial estimation phase.
+                     One of the objectives for this phase is to understand the project's needs,
+                      including the art style and asset requirements, which helps set clear
+                       expectations. The studio then defines the scope of the work, specifying 
+                       deliverables and any allowed revisions. Based on the project requirements,
+                        they allocate the necessary resources, ensuring that the right talent
+                         is available throughout the production. Estimating the timeline involves
+                          breaking down the project into phases, assigning appropriate durations 
+                          to each. Cost calculation follows, offering a transparent budget plan 
+                          that minimizes unexpected financial burdens.
+                        </p>
         <!-- side bar -->
         <aside class="sidebar">
             <nav>
                 <h2 class="content-list-title">Content list</h2>
                 <ul>
-                    <li class="sidebar-item"><a href="#subtitle-1">Why Outsource Game Art?</a></li>
-                    <li class="sidebar-item"><a href="#section2">Раздел 2</a></li>
-                    <li class="sidebar-item"><a href="#section3">Раздел 3</a></li>
+                    <li><a class="sidebar-item" href="#subtitle-1">Why Outsource Game Art?</a></li>
+                    <li><a class="sidebar-item" href="#subtitle-2">Раздел 2</a></li>
+                    <li><a class="sidebar-item" href="#subtitle-3">Раздел 3</a></li>
                 </ul>
             </nav>
         </aside>
+        
     </div>
 </section>
     
+<script>
+    // Получаем все ссылки в сайтбаре
+const sidebarLinks = document.querySelectorAll('.sidebar-item');
+
+// Добавляем обработчик событий для каждой ссылки
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    // Убираем класс 'active' у всех ссылок
+    sidebarLinks.forEach(link => link.classList.remove('active'));
+
+    // Добавляем класс 'active' к текущей кликнутой ссылке
+    this.classList.add('active');
+  });
+});
+</script>
+
 </body>
 </html>
