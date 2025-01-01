@@ -152,15 +152,13 @@ body {
     }
 
     .main-section {
-        padding-bottom: 50px;
-        background-image: url(./Арт/character.webp);
-        background-repeat: no-repeat;
-        min-height: 1000px;
-        background-size: contain;
-        display: flex;
-        align-items: center;
-        
-    }
+      padding-bottom: 50px;
+      background-image: url(./Арт/The\ Importance\ of\ Game\ Art\ Outsourcing\ in\ 2024.webp);
+      background-repeat: no-repeat;
+      background-size: cover;  /* Картинка будет растягиваться с сохранением пропорций */
+      min-height: 100vh;        /* Минимальная высота равна высоте экрана */
+  }
+  
     .title-text-for-mobile {
       display: none;
     }
@@ -432,23 +430,20 @@ color: rebeccapurple;
       height: auto;
   }
   .main-section {
-      min-height: 400px;
-      align-items: center;
-  }
+    background-size: contain;  /* Для мобильных устройств используем contain, чтобы изображение влезло в экран */
+    background-position: center; /* Центрируем изображение */
+    min-height: 26vh;
+ 
+   
+}
   .content-section {
       padding: 20px 0;
   }
 
   .title-text {
-      display: none;
+      font-size: 20px;
   }
-  .title-text-for-mobile {
-      display: block;
-      text-align: center;
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 20px;
-  }  
+
   .subtitle {
       font-size: 20px;
   }
