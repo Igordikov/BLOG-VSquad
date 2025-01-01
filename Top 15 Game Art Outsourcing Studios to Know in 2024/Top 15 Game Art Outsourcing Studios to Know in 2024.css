@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: Arial, sans-serif;
   line-height: 1.4;
-  background-color: #fff;
+  background-color:#E8E8E8;
   color: #000;
 }
 
@@ -75,6 +75,7 @@ body {
 :focus {
   outline: none;
 }
+
 
 /* Стандартный набор для container */
 
@@ -96,6 +97,8 @@ body {
   
 
 /* /Reset CSS */
+
+
 /* CSS для контейнера изображений */
 .image-container {
   display: inline-block;
@@ -114,6 +117,23 @@ body {
   transition: transform 0.3s ease; /* Плавный переход */
 }
 
+/* черта под сексией */
+
+.main-section {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.main-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0; /* Линия будет внизу секции */
+  left: 0;
+  width: 100%; /* Линия по всей ширине секции */
+  height: 2px; /* Толщина линии */
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Градиент, исчезающий вправо */
+}
 
 
 
@@ -123,6 +143,7 @@ body {
     font-size: 60px;
     margin-bottom: 40px;
     font-weight: 800;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2), 4px 4px 4px rgba(0, 0, 0, 0.1);
     }
 
     .title-container {
@@ -138,7 +159,7 @@ body {
         background-size: contain;
         display: flex;
         align-items: center;
-        background-color:azure;
+        
     }
     .title-text-for-mobile {
       display: none;
@@ -146,7 +167,7 @@ body {
 
     .content-section {
         padding: 50px 0;
-        background-color:#D3D3D3;
+        
     }
 
 /* Карточки для студий */
@@ -361,47 +382,47 @@ color: rebeccapurple;
   
 
     /* Мобильная адаптивность: для маленьких экранов контейнер будет занимать всю ширину */
-  @media (max-width: 768px) {
-    .container {
-      padding: 0 20px; /* Увеличиваем отступы для мобильных устройств */
+  /* Адаптивность для мобильных устройств и планшетов */
+@media (max-width: 1024px) {
+  .container {
+      padding: 0 20px; /* Увеличиваем отступы для мобильных устройств и планшетов */
       height: auto;
-    }
-    .main-section {
-        min-height: 400px;
+  }
+  .main-section {
+      min-height: 400px;
       align-items: center;
-    }
-    .content-section {
-        padding: 20px 0;
-    }
-    .title-container {
-      margin: 0 auto;
-    }
-    .title-text {
+  }
+  .content-section {
+      padding: 20px 0;
+  }
+
+  .title-text {
       display: none;
-    }
+  }
   .title-text-for-mobile {
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 20px;
+      display: block;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
   }  
   .subtitle {
-    font-size: 20px;
-  } 
+      font-size: 20px;
+  }
 
-        p {
-            font-size: 15px;
-        }
-        .sidebar {
-          display: none;
-        }
+  p {
+      font-size: 15px;
+  }
 
-        .studio-card {
-          margin: 0 auto;
-        
-        }
+  .sidebar {
+      display: none;
+  }
+
+  .studio-card {
+      margin-top: 30px;
+  }
 }
+
 
 
 
