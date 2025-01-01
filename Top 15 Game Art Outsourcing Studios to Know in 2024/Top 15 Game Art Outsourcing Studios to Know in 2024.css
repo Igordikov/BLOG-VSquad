@@ -47,6 +47,7 @@ img {
   display: block;
  border-radius: 20px;
  background-color: #f0f0f0; box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+ margin: 30px auto;
 }
 
 /* Убираем дефолтный стиль для абзацев */
