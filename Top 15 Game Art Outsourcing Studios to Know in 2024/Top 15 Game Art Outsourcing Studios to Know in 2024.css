@@ -395,6 +395,10 @@ color: rebeccapurple;
         .sidebar {
           display: none;
         }
+
+        .studio-card {
+          margin: 0 auto;
+        }
 }
 
 
