@@ -139,9 +139,10 @@ body {
     .main-section {
       background-image: url(./Арт/The\ Importance\ of\ Game\ Art\ Outsourcing\ in\ 2024.webp);
       background-repeat: no-repeat;
-      background-size: cover;   /* Растягивает фон на весь экран */
-      background-position: center;  /* Центрирует изображение */
-      min-height: 100vh;         /* Минимальная высота равна высоте экрана */
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh; /* Высота всей секции с картинкой */
+      padding-right: 250px;  /* Чтобы контент не перекрывался сайдбаром */
     }
     
   
@@ -238,14 +239,16 @@ body {
     /* sidebar */
 
     .sidebar {
-      position: fixed;
-      top: 0;
+      
+      position:  fixed;
+      top: 0vh;
       right: 0;
       width: 250px;
-      height: 100%;
+      height: auto;
+      max-height: 100vh;
       padding: 20px;
       overflow-y: auto;
-      
+      z-index: 10;
   }
 
  
