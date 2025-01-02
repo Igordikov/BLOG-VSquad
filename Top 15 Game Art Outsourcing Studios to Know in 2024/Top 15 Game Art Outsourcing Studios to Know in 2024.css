@@ -117,23 +117,8 @@ body {
   transition: transform 0.3s ease; /* Плавный переход */
 }
 
-/* черта под сексией */
 
-.main-section {
-  position: relative;
-  padding: 20px;
-  margin-bottom: 20px;
-}
 
-.main-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0; /* Линия будет внизу секции */
-  left: 0;
-  width: 100%; /* Линия по всей ширине секции */
-  height: 2px; /* Толщина линии */
-  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Градиент, исчезающий вправо */
-}
 
 
 
@@ -152,12 +137,13 @@ body {
     }
 
     .main-section {
-      padding-bottom: 50px;
       background-image: url(./Арт/The\ Importance\ of\ Game\ Art\ Outsourcing\ in\ 2024.webp);
       background-repeat: no-repeat;
-      background-size: cover;  /* Картинка будет растягиваться с сохранением пропорций */
-      min-height: 100vh;        /* Минимальная высота равна высоте экрана */
-  }
+      background-size: cover;   /* Растягивает фон на весь экран */
+      background-position: center;  /* Центрирует изображение */
+      min-height: 100vh;         /* Минимальная высота равна высоте экрана */
+    }
+    
   
     .title-text-for-mobile {
       display: none;
@@ -259,6 +245,7 @@ body {
       height: 100%;
       padding: 20px;
       overflow-y: auto;
+      
   }
 
  
@@ -274,6 +261,9 @@ body {
   .content-list-title {
     font-size: 30px;
     font-weight: 700; 
+    
+  
+   
   }
 
   .sidebar-item {
@@ -430,7 +420,7 @@ color: rebeccapurple;
       height: auto;
   }
   .main-section {
-    background-size: contain;  /* Для мобильных устройств используем contain, чтобы изображение влезло в экран */
+   
     background-position: center; /* Центрируем изображение */
     min-height: 26vh;
  
