@@ -238,7 +238,7 @@ body {
 
     /* sidebar */
 
-    .sidebar {
+    /* .sidebar {
       
       position:  fixed;
       top: 0vh;
@@ -260,19 +260,16 @@ body {
   
   .sidebar nav ul li {
       margin: 10px 0;
-  }
+  } */
   .content-list-title {
     font-size: 30px;
     font-weight: 700; 
-    
-  
-   
-  }
+     }
 
-  .sidebar-item {
+  /* .sidebar-item {
 font-weight: 700;
 color: rebeccapurple;
-  }
+  } */
 
   .anchor {
     position: relative;
@@ -301,6 +298,88 @@ color: rebeccapurple;
   .anchor:hover::before {
     transform: scaleX(1);
   }
+
+
+  
+ul li {
+  list-style-type: none
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* sidebar */
+
+.sidebar {
+  background-color: #c0bbbb;
+  position:  fixed;
+  top: 0vh;
+  right: 0;
+  width: 250px;
+  height: auto;
+  max-height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 10px 0;
+}
+.content-list-title {
+font-size: 30px;
+font-weight: 700; 
+
+
+
+}
+
+.sidebar-item {
+font-weight: 700;
+color: rebeccapurple;
+}
+
+
+
+
+/* Стили для карточек списка */
+.sidebar-item {
+  color: #0f0f0f; /* Исходный цвет текста */
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px; /* Внутренние отступы */
+  border-radius: 10px; /* Скругление углов */
+  margin-bottom: 10px; /* Расстояние между карточками */
+  background: linear-gradient(90deg, #ffffff, #201005); /* Градиентный фон */
+  transition: background 0.5s ease, color 0.3s ease, box-shadow 0.5s ease; /* Плавный переход */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); /* Легкая тень */
+}
+
+/* Для наведения на карточки */
+.sidebar-item:hover {
+  color: #ff6600; /* Изменение цвета текста при наведении */
+  background: linear-gradient(90deg, #ffe6cc, #5c2602); /* Градиент меняется */
+  box-shadow: 0 6px 10px rgba(255, 102, 0, 0.3); /* Увеличение и изменение тени */
+}
+
+/* Активная карточка */
+.sidebar-item.active {
+  color: #ffffff; /* Белый цвет текста */
+  background: linear-gradient(90deg, #1b0d03, #cc5200); /* Яркий градиент для активного элемента */
+  box-shadow: 0 8px 12px rgba(255, 102, 0, 0.5); /* Глубокая тень */
+  font-weight: bold; /* Жирный шрифт */
+}
+
+
 
  
 
@@ -377,9 +456,9 @@ color: rebeccapurple;
 
   
   
-/* Активный елемент сайт-бара */
+/* Активный елемент сайт-бара
 /* Стили для элементов списка */
-.sidebar-item {
+/* .sidebar-item {
   color: #0f0f0f; /* Исходный цвет текста */
   text-decoration: none;
   display: block;
@@ -397,7 +476,7 @@ color: rebeccapurple;
   color: #ff6600; /* Цвет для активного элемента */
   font-weight: bold; /* Жирный шрифт */
   text-decoration: underline; /* Подчеркивание активного элемента */
-}
+} */ */
 
 
 
