@@ -310,73 +310,60 @@ ul li {
 }
 
 
-/* sidebar */
+/* content-list-1.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
 
 .sidebar {
-  background-color: #c0bbbb;
-  position:  fixed;
-  top: 0vh;
+  position: fixed;
   right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 250px;
-  height: auto;
-  max-height: 100vh;
   padding: 20px;
-  overflow-y: auto;
-  z-index: 10;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
 }
 
-
-
-.sidebar nav ul {
-  list-style-type: none;
-  padding: 0;
+.sidebar:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar nav ul li {
-  margin: 10px 0;
+.sidebar nav {
+  position: relative;
 }
+
 .content-list-title {
-font-size: 30px;
-font-weight: 700; 
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-
-
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar-item {
-font-weight: 700;
-color: rebeccapurple;
-}
-
-
-
-
-/* Стили для карточек списка */
-.sidebar-item {
-  color: #0f0f0f; /* Исходный цвет текста */
-  text-decoration: none;
   display: block;
-  padding: 10px 15px; /* Внутренние отступы */
-  border-radius: 10px; /* Скругление углов */
-  margin-bottom: 10px; /* Расстояние между карточками */
-  background: linear-gradient(90deg, #ffffff, #201005); /* Градиентный фон */
-  transition: background 0.5s ease, color 0.3s ease, box-shadow 0.5s ease; /* Плавный переход */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); /* Легкая тень */
+  color: #007bff;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Для наведения на карточки */
-.sidebar-item:hover {
-  color: #ff6600; /* Изменение цвета текста при наведении */
-  background: linear-gradient(90deg, #ffe6cc, #5c2602); /* Градиент меняется */
-  box-shadow: 0 6px 10px rgba(255, 102, 0, 0.3); /* Увеличение и изменение тени */
-}
-
-/* Активная карточка */
+.sidebar-item:hover,
 .sidebar-item.active {
-  color: #ffffff; /* Белый цвет текста */
-  background: linear-gradient(90deg, #1b0d03, #cc5200); /* Яркий градиент для активного элемента */
-  box-shadow: 0 8px 12px rgba(255, 102, 0, 0.5); /* Глубокая тень */
-  font-weight: bold; /* Жирный шрифт */
+  color: #0056b3;
+  padding-left: 10px;
 }
 
 
