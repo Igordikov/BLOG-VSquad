@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content list</title>
+   <link rel="stylesheet" href="./content-list-3.css">
+</head>
+<body>
+
+   <!-- side bar -->
+   <aside class="sidebar">
+            
+    <nav>
+        <h2 class="content-list-title subtitle">Content list</h2>
+        <ul>
+            <li><a class="sidebar-item" href="#subtitle-1">Why Outsource Game Art?</a></li>
+            <li><a class="sidebar-item" href="#subtitle-2">How to Choose the Best Game Art Outsourcing Studio</a></li>
+            <li><a class="sidebar-item" href="#subtitle-3">Top 15 Game Art Outsourcing Studios in 2024</a></li>
+            
+                    <ul style="list-style-type: disc;  /* Круглый маркер */
+                    margin-left: 20px;">
+                        <li><a class="sidebar-item" href="#vaquad.art" style="margin-left: 20px; ">Vsquad.art</a></li>
+                        <li><a class="sidebar-item" href="#argentics" style="margin-left: 20px;">Argentics</a></li>
+                        <li><a class="sidebar-item" href="#m81" style="margin-left: 20px;">M81 Studio</a></li>
+                        <li><a class="sidebar-item" href="#fgfactory" style="margin-left: 20px;">Fgfactory </a></li>
+                        <li><a class="sidebar-item" href="#kevuru" style="margin-left: 20px;">Kevuru Games</a></li>
+                        <li><a class="sidebar-item" href="#pixune" style="margin-left: 20px;">Pixune Studios</a></li>
+                        <li><a class="sidebar-item" href="#paintpool" style="margin-left: 20px;">PaintPool Studio</a></li>
+                        <li><a class="sidebar-item" href="#retrostyle" style="margin-left: 20px;">Retro Style Games</a></li>
+                        <li><a class="sidebar-item" href="#game-pack" style="margin-left: 20px;">Game Pack</a></li>
+                        <li><a class="sidebar-item" href="#dadcomgames" style="margin-left: 20px;">DadComGames</a></li>
+                        <li><a class="sidebar-item" href="#3d-ace" style="margin-left: 20px;">3D Ace</a></li>
+                        <li><a class="sidebar-item" href="#whimsy-games" style="margin-left: 20px;">Whimsy Games</a></li>
+                        <li><a class="sidebar-item" href="#starloop" style="margin-left: 20px;">StarLoop Studios</a></li>
+                        <li><a class="sidebar-item" href="#pingle-studios" style="margin-left: 20px;">Pingle Studios</a></li>
+                    </ul>
+                    <li><a class="sidebar-item" href="#subtitle-4">Conclusion</a></li>
+                    <li><a class="sidebar-item" href="#faq">FAQ</a></li>
+                    
+         </ul>
+    </nav>
+</aside>
+
+
+    <script>
+        // Получаем все ссылки в сайтбаре
+    const sidebarLinks = document.querySelectorAll('.sidebar-item');
+    
+    // Добавляем обработчик событий для каждой ссылки
+    sidebarLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        // Убираем класс 'active' у всех ссылок
+        sidebarLinks.forEach(link => link.classList.remove('active'));
+    
+        // Добавляем класс 'active' к текущей кликнутой ссылке
+        this.classList.add('active');
+      });
+    });
+    
+    </script>
+</body>
+</html>
