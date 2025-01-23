@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./faq-3.css">
+
+</head>
+<body>
+     <!-- FAQ -->
+
+     <section id="faq">
+        <div class="container">
+          <h2 class="subtitle" id="faq">FAQ</h2>
+          <div class="faq-item">
+            <button class="faq-question">What is the typical timeline for game art production when working with an outsourcing studio?
+            </button>
+            <div class="faq-answer">
+              <p>Timelines can be different. It’s based on project complexity. They range from a few weeks for smaller assets to several months 
+                for complete art development. Early planning and clear communication help with the process.</p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">Are there any risks involved in outsourcing game art, and how can they be mitigated?
+            </button>
+            <div class="faq-answer">
+              <p>Risks are miscommunication and quality control issues. Mitigation is a clear guideline, regular updates, and reviews.
+            </p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">How can I ensure that the art style remains consistent across different outsourcing teams working on the same project?</button>
+            <div class="faq-answer">
+              <p>Establish detailed style guides and visual references, do regular check-ins, and make all teams know the same creative direction to maintain a unified style.</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      
+      <script>
+       document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+
+    // Убираем active у других элементов, если это нужно
+    document.querySelectorAll('.faq-item').forEach(item => {
+      if (item !== faqItem) {
+        item.classList.remove('active');
+      }
+    });
+
+    // Переключаем текущий элемент
+    faqItem.classList.toggle('active');
+  });
+});
+
+
+    
+    </script>
+</body>
+</html>
