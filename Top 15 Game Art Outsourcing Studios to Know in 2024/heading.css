@@ -1,0 +1,113 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.container {
+    width: 100%; /* Контейнер занимает всю ширину экрана */
+    max-width: 1200px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Выравнивание контейнера по центру */
+    padding: 0 15px; /* Отступы слева и справа */
+    box-sizing: border-box; /* Включаем паддинг в ширину контейнера */
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+}
+
+/* Заголовок 1 - Переливание цвета слева направо */
+.title-1 {
+    color: #333;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(90deg, #007bff, #e91e63);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorShift 3s infinite linear;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.title-2 {
+    font-weight: bold;
+    background: linear-gradient(90deg, #bbbbbb 50%, #000000 50%);
+    background-size: 200% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 12s infinite linear;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-position: 200% 0;
+    }
+    50% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+ /* Заголовок 3 - Небольшое выпучивание при наведении без рамки */
+.title-3 {
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.title-3:hover {
+    transform: scale(1.1);
+}
+
+
+/* Заголовок 4 - Небольшое уменьшение при наведении */
+.title-4 {
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.title-4:hover {
+    transform: scale(0.9);
+}
+
+/* Заголовок 5 - Пульсация с изменением цвета текста */
+.title-5 {
+    color: #333;
+    text-align: center;
+    display: inline-block;
+    transition: color 0.3s ease;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        color: #333;
+        text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    100% {
+        color: #007bff;
+        text-shadow: 0 0 20px rgba(0, 123, 255, 1);
+    }
+}
+
+.title-5:hover {
+    color: #e91e63;
+    text-shadow: 0 0 30px rgba(233, 30, 99, 0.8);
+}
+
+

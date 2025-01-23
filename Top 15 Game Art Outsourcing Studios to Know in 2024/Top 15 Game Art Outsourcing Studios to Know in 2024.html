@@ -678,37 +678,45 @@
         
     </div>
 </section>
+
+<!-- sidebar -->
     
 <script>
-    // Получаем все ссылки в сайтбаре
+    
 const sidebarLinks = document.querySelectorAll('.sidebar-item');
 
-// Добавляем обработчик событий для каждой ссылки
+
 sidebarLinks.forEach(link => {
   link.addEventListener('click', function() {
     // Убираем класс 'active' у всех ссылок
     sidebarLinks.forEach(link => link.classList.remove('active'));
 
-    // Добавляем класс 'active' к текущей кликнутой ссылке
+   
     this.classList.add('active');
   });
 });
 
 </script>
 
-<script>
-    document.querySelectorAll('.faq-question').forEach((button) => {
-  button.addEventListener('click', () => {
-    const answer = button.nextElementSibling;
-    if (answer.style.display === 'block') {
-      answer.style.display = 'none';
-    } else {
-      answer.style.display = 'block';
-    }
-  });
-});
+<!-- FAQ -->
 
-</script>
+<script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+
+        // Убираем active у других элементов, если это нужно
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('active');
+          }
+        });
+
+        // Переключаем текущий элемент
+        faqItem.classList.toggle('active');
+      });
+    });
+  </script>
 
 </body>
 </html>

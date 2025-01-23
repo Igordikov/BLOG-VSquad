@@ -302,182 +302,133 @@ color: rebeccapurple;
 
   
 /* content-list-1.css */
-ul, ol, li {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-right: 270px; /* Добавляет отступ для основного содержимого */
+}
+
+li {
   list-style-type: none;
 }
 
 .sidebar {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 250px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.sidebar::before,
-.sidebar::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 20px;
-    background: linear-gradient(to top, rgba(249, 249, 249, 0), rgba(249, 249, 249, 1));
-    pointer-events: none;
-}
-
-.sidebar::after {
-    top: 0;
-    background: linear-gradient(to bottom, rgba(249, 249, 249, 0), rgba(249, 249, 249, 1));
-}
-
-.sidebar::before {
-    bottom: 0;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 250px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-left: 3px solid #ff9800;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  overflow-y: auto; /* Добавляем прокрутку по вертикали */
+  max-height: 80%; /* Ограничиваем высоту сайдбара */
 }
 
 .sidebar:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar nav {
-    position: relative;
+  position: relative;
 }
 
 .content-list-title {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #ff9800;
+  padding-bottom: 10px;
+  animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
 }
 
 .sidebar-item {
-    display: block;
-    color: #007bff;
-    text-decoration: none;
-    padding: 5px 0;
-    transition: all 0.3s ease-in-out;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+}
+
+.sidebar-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #ff9800;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-item:hover::after,
+.sidebar-item.active::after {
+  transform: scaleY(1);
 }
 
 .sidebar-item:hover,
 .sidebar-item.active {
-    color: #0056b3;
-    padding-left: 10px;
+  background-color: #ffebcd;
+  color: #000;
+  padding-left: 20px;
 }
 
+.sidebar-item span {
+  display: inline-block;
+  animation: fadeIn 0.6s ease-out;
+}
 
-
- 
-
-  /* Стиль для Н2 */
-
-  .subtitle {
-    font-weight: bold;
-    background: linear-gradient(90deg, #bbbbbb 50%, #000000 50%);
-    background-size: 200% 100%;
-    color: transparent;
-    -webkit-background-clip: text;
-    animation: slide 12s infinite linear;
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateX(-10px);
   }
-  
-  @keyframes slide {
-    0% {
-      background-position: 200% 0;
-    }
-    50% {
-      background-position: 0% 0;
-    }
-    100% {
-      background-position: -200% 0;
-    }
+  to {
+      opacity: 1;
+      transform: translateX(0);
   }
-  
-  
- /* FAQ */
-
- #faq {
-  padding: 40px 0;
-}
-
-#faq .container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.faq-item {
-  margin: 15px 0;
-}
-
-.faq-question {
-  background-color: #f4f4f4;
-  border: none;
-  padding: 15px;
-  width: 100%;
-  text-align: left;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.faq-answer {
-  display: none;
-  margin-top: 10px;
-  padding: 10px;
-  background-color: azure;
-  border-radius: 5px;
-  color: #0056b3;
-}
-
-.faq-question:focus {
-  outline: none;
-  background-color: #e0e0e0;
 }
 
 
-  
-  
-  
 
 
-  
-  
-/* Активный елемент сайт-бара
-/* Стили для элементов списка */
-/* .sidebar-item {
-  color: #0f0f0f; /* Исходный цвет текста */
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* Скрытие сайдбара на мобильных устройствах */
+@media (max-width: 767px) {
+  .sidebar {
+      display: none;
+  }
 }
-
-/* Для наведения на элементы */
-.sidebar-item:hover {
-  color: #ff6600; /* Цвет при наведении */
-}
-
-/* Активный элемент (когда он выбран) */
-.sidebar-item.active {
-  color: #ff6600; /* Цвет для активного элемента */
-  font-weight: bold; /* Жирный шрифт */
-  text-decoration: underline; /* Подчеркивание активного элемента */
-} */ */
-
-
-
-
-
-
 
 
 
@@ -527,6 +478,149 @@ ul, ol, li {
       margin-top: 30px;
   }
 }
+
+
+
+ 
+
+  /* Стиль для Н2 */
+
+  .subtitle {
+    font-weight: bold;
+    background: linear-gradient(90deg, #bbbbbb 50%, #000000 50%);
+    background-size: 200% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 12s infinite linear;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-position: 200% 0;
+    }
+    50% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  
+ 
+
+
+
+
+.subtitle {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.subtitle::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* FAQ */
+
+
+.faq-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  color: #007bff;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f0f0f0;
+  transform: rotate(1deg);
+  color: #0056b3;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.5s ease, transform 0.5s ease;
+  padding: 0 20px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px; /* Достаточно большое значение для содержимого */
+  opacity: 1;
+  transform: scaleY(1);
+  padding: 20px 20px 40px 20px;
+}
+
+.faq-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, rgba(0,123,255,0.1), rgba(0,123,255,1));
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.faq-item.active::before {
+  transform: scaleX(1);
+}
+
+.faq-question i {
+  font-size: 1em;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-item:last-child {
+  margin-bottom: 200px;
+}  
+
+
+
+  
+  
+
 
 
 
