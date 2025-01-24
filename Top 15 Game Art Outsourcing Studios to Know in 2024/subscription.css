@@ -3,53 +3,51 @@ body {
     margin: 0;
     padding: 0 20px;
     padding: 100px 0;
-
 }
 
 .card {
     background-color: #F8F8F8;
-    width: 200px;
+    width: 320px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    
-  }
-  
-  .subscription {
+}
+
+.subscription {
     display: flex;
     flex-direction: column;
-  }
-  
-  .subscription h2 {
+}
+
+.subscription h2 {
     text-align: center;
     margin-bottom: 10px;
-  }
-  
-  .subscription input {
+}
+
+.subscription input {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .subscription button {
+}
+
+.subscription button {
     padding: 10px;
     background-color: #DD2F2C;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .subscription button:hover {
+    transition: background-color 0.3s ease;
+}
+
+.subscription button:hover {
     background-color: #f86260;
-  }
-  
-  .subscription p {
+}
+
+.subscription p {
     margin-top: 10px;
     font-size: 14px;
     color: #777;
     text-align: center;
-  }
-  
+}
