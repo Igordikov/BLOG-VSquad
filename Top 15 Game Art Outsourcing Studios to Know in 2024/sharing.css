@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0 20px;;
+}
+
+.share-block-vertical {
+    position: fixed;
+    left: 10px; /* Расстояние от левого края */
+    top: 50%; /* Центровка по вертикали */
+    transform: translateY(-50%); /* Центрирование относительно самого блока */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.share-title-vertical {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Расстояние между заголовком и иконками */
+    color: #333;
+    text-align: center;
+}
+
+.share-icons-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.share-icon img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.share-icon img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Индивидуальные стили для иконок */
+.share-icon.instagram img {
+    filter: hue-rotate(320deg);
+}
+
+.share-icon.telegram img {
+    filter: hue-rotate(190deg);
+}
+
+.share-icon.twitter img {
+    filter: hue-rotate(200deg);
+}
+
