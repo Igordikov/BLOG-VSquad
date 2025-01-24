@@ -64,16 +64,9 @@ body {
 }
 
 .share-title-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 18px;
     margin-bottom: 10px;
-}
-
-.share-title-vertical span {
-    line-height: 1;
-    margin: 2px 0;
+    text-align: center;
 }
 
 .share-icons-vertical {
