@@ -1,59 +1,92 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0 20px;;
+    padding: 0 20px;
+    padding: 100px 0;
 }
 
+.card {
+    background-color: #F8F8F8;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subscription input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscription button {
+    padding: 10px;
+    background-color: #DD2F2C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscription button:hover {
+    background-color: #f86260;
+}
+
+.subscription p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+}
+
+/* Новый блок для надписи "Share" */
 .share-block-vertical {
-    position: fixed;
-    left: 10px; /* Расстояние от левого края */
-    top: 50%; /* Центровка по вертикали */
-    transform: translateY(-50%); /* Центрирование относительно самого блока */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    padding: 10px 5px;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 20px; /* Отступ от левого края */
+    transform: translateY(-50%);
 }
 
 .share-title-vertical {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 15px; /* Расстояние между заголовком и иконками */
-    color: #333;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.share-title-vertical span {
+    line-height: 1;
+    margin: 2px 0;
 }
 
 .share-icons-vertical {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
 }
 
-.share-icon img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+.share-icon {
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out; /* Плавное увеличение */
 }
 
-.share-icon img:hover {
-    transform: scale(1.1);
-    opacity: 0.8;
+.share-icon:hover {
+    transform: scale(1.1); /* Увеличение иконок при наведении */
 }
-
-/* Индивидуальные стили для иконок */
-.share-icon.instagram img {
-    filter: hue-rotate(320deg);
-}
-
-.share-icon.telegram img {
-    filter: hue-rotate(190deg);
-}
-
-.share-icon.twitter img {
-    filter: hue-rotate(200deg);
-}
-
