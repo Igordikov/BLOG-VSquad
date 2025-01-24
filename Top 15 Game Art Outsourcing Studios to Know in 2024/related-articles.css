@@ -28,23 +28,23 @@ a {
 }
 
 .article-info a.article-title {
-    display: inline; /* Гарантирует, что ссылка занимает только место текста */
+    display: inline; 
     margin-top: 10px;
     font-weight: bold;
-    color: #0077cc;
+    color:  #2280CD;
     text-decoration: none;
-    margin-bottom: 15px; /* Убедитесь, что нет внутренних отступов */
+    margin-bottom: 15px; 
 }
 
 .article-info {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Убедитесь, что содержимое выровнено слева */
+    align-items: flex-start;
 }
 
 
 .article-info a.article-title:hover {
-    color: #0000ff;
+    color:  #1468AD;
 }
 
 .icons {
