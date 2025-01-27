@@ -1,0 +1,173 @@
+/* CSS Reset & GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    font-size: 100%;
+    font: inherit;
+}
+
+body {
+    line-height: 1;
+   
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    padding: 30px 0;
+} 
+
+
+h2 {
+  text-align: center;
+   padding: 30px 0;
+   display: block; 
+   font-size: 25px;
+   font-weight: 700;
+}
+
+p {
+    line-height: 1.6;
+    font-size: large;
+}
+
+/* Контейнер */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Anchor*/
+.anchor-3 {
+    
+    color: #007bff; /* Синий цвет */
+    text-decoration: none;
+    position: relative;
+}
+
+.anchor-3::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.anchor-3:hover::before {
+    width: 100%;
+}
+
+.anchor-3:hover {
+    color: #0056b3; /* Темно-синий цвет при наведении */
+}
+
+
+/* meta (метаданные над н1) */
+
+.article-meta {
+    font-family: Arial, sans-serif;
+    color: #555;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.article-meta .date,
+.article-meta .reading-time,
+.article-meta .views {
+    color: #888;
+}
+
+.article-meta .rating .stars {
+    color: gold;
+}
+
+.article-meta .rating .rating-value {
+    margin-left: 5px;
+    color: #555;
+}
+
+
+
+
+/* Article */
+
+.article-section {
+padding: 50px 0;
+}
+
+.article-text {
+
+}
+
+/* Content (ARTICLE) */
+
+.main-section {
+    background-image: url(./Арт/man.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Минимальная высота секции */
+}
+
+
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: larger;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    p {
+        font-size: small;
+    }
+}
+
+
+
+
+
