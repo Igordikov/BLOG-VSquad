@@ -4,13 +4,13 @@
 
 /* Новый блок для надписи "Share" */
 .share-block-vertical {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+   
+  margin-top: 200px;
 
-
-    left: 5px; /* Отступ от левого края */
-  
 }
 
 .share-title-vertical {

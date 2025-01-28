@@ -12,17 +12,18 @@ li {
   
     top: 30%;
     transform: translateY(-50%); */
-    /* position: absolute;
+  
     margin-top: 10px;
-    right: 0; */
+    right: 80%;
+    top: 0;
     width: 250px;
     padding: 20px;
-    background-color: #f0f0f0;
+    
     border-left: 3px solid  #DD2F2C;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
     overflow-y: auto; Добавляем прокрутку по вертикали
-    /* max-height: 60%; Ограничиваем высоту сайдбара */
+    max-height: 80%; Ограничиваем высоту сайдбара
 }
 
 .sidebar:hover {
