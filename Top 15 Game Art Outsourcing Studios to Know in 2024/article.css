@@ -201,7 +201,7 @@ padding: 50px 0;
 
 
 
-.step {
+.type {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -212,7 +212,7 @@ padding: 50px 0;
     margin: 20px 0;
 }
 
-.substep {
+.sub-type {
     background: #fff;
     padding: 15px;
     border-radius: 5px;
@@ -328,6 +328,56 @@ p {
     color: #555;
     line-height: 1.6;
 }
+
+
+.vsquad-courses {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    margin: 0 auto;
+}
+
+.vsquad-courses h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.vsquad-courses p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.vsquad-courses a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.vsquad-courses a:hover {
+    text-decoration: underline;
+}
+
+.vsquad-course-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.vsquad-course-card h3 {
+    color: #2c3e50;
+}
+
+.flex-related {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
 
 
 /* Адаптация под мобильные устройства */
