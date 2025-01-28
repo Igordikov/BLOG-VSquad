@@ -30,6 +30,9 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 table {
@@ -50,11 +53,26 @@ h2 {
    display: block; 
    font-size: 25px;
    font-weight: 700;
+   margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 10px 0 10px 0;
 }
 
 p {
     line-height: 1.6;
     font-size: large;
+    padding: 5px 0;
 }
 
 /* Контейнер */
@@ -65,15 +83,24 @@ p {
     padding: 20px;
 }
 
+.container-for-article {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    transform: translateX(-10%);
+}
+
+
 /* Anchor*/
-.anchor-3 {
+.anchor {
     
     color: #007bff; /* Синий цвет */
     text-decoration: none;
     position: relative;
 }
 
-.anchor-3::before {
+.anchor::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -85,13 +112,15 @@ p {
     transform: translateX(-50%);
 }
 
-.anchor-3:hover::before {
+.anchor:hover::before {
     width: 100%;
 }
 
-.anchor-3:hover {
+.anchor:hover {
     color: #0056b3; /* Темно-синий цвет при наведении */
 }
+
+
 
 
 /* meta (метаданные над н1) */
@@ -129,9 +158,7 @@ p {
 padding: 50px 0;
 }
 
-.article-text {
 
-}
 
 /* Content (ARTICLE) */
 
@@ -146,12 +173,176 @@ padding: 50px 0;
     min-height: 100vh; /* Минимальная высота секции */
 }
 
+.fun-fact {
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #b0e0e6, rgba(176, 224, 230, 0));
+    color: #000;
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.fun-fact h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.fun-fact-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+
+.step {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.substep {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(50% - 40px);
+    box-sizing: border-box;
+}
+
+.full-width {
+    flex: 1 1 100%;
+}
+
+h2 {
+    color: #2c3e50;
+
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Можно регулировать расстояние между картинками */
+}
+
+.image-container img {
+    width: 48%; /* Или любой другой размер, чтобы картинки поместились горизонтально */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* table */
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.comparison-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+.comparison-table td {
+    background-color: #fff;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.comparison-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.comparison-table th, .comparison-table td {
+    text-align: left;
+    vertical-align: top;
+    padding: 12px;
+}
+
+.comparison-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.program-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.program-card {
+    background: #f9f9f9;
+    padding: 20px;
+    flex: 1 1 100%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.program-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.program-card p {
+    color: #555;
+    line-height: 1.6;
+}
 
 
 /* Адаптация под мобильные устройства */
 @media (max-width: 768px) {
-    .container {
+    .container-for-article {
+        max-width: 320px;
+        margin: 0 auto;
+        align-items: center;
+      
+    }
+    
+    .container
+    {
         padding: 10px;
+       
     }
 
     h1 {
@@ -162,10 +353,17 @@ padding: 50px 0;
         font-size: x-large;
     }
 
+    h3 {
+        font-size: larger;
+    }
+
     p {
         font-size: medium;
     }
 }
+
+
+
 
 
 
