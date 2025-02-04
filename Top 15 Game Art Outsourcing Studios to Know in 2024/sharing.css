@@ -15,21 +15,36 @@
 
 .share-title-vertical {
     font-size: 18px;
-    margin-bottom: 10px;
+ 
     text-align: center;
 }
 
 .share-icons-vertical {
     display: flex;
     flex-direction: column;
+   
   
 }
 
 .share-icon {
-    margin-bottom: 10px;
-    transition: transform 0.2s ease-in-out; /* Плавное увеличение */
+   
+    transition: transform 0.2s ease-in-out; 
 }
 
 .share-icon:hover {
-    transform: scale(1.1); /* Увеличение иконок при наведении */
+    transform: scale(1.1); 
 }
+
+.sharing-img {
+    box-shadow: none;
+   margin: 10px auto;
+   
+}
+
+/* Скрытие блока на мобильных устройствах */
+@media (max-width: 768px) { /* Максимальная ширина экрана 768px, вы можете изменить это значение при необходимости */
+    .share-block-vertical {
+        display: none;
+    }
+}
+

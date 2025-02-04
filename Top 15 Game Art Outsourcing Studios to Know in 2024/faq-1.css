@@ -37,7 +37,7 @@ body {
     width: 100%;
     cursor: pointer;
     position: relative;
-    padding-right: 30px;
+  
 }
 
 
@@ -59,6 +59,7 @@ body {
 
 .faq-item.active .faq-question::after {
     transform: translateY(-50%) rotate(180deg);
+ 
 }
 
 .faq-answer {
@@ -67,9 +68,13 @@ body {
     opacity: 0;
     transition: all 0.5s ease;
     color: #18171C;
+    padding-right: 30px;
+  
 }
+
 
 .faq-item.active .faq-answer {
     max-height: 500px; 
     opacity: 1;
 }
+

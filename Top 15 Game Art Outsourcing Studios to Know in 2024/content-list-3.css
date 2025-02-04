@@ -36,9 +36,9 @@ li {
 
 .content-list-title {
     font-size: 1.5em;
-    color: #333;
+    color:  #18171C ;
     margin-bottom: 15px;
-    text-align: center;
+  
     border-bottom: 2px solid  #DD2F2C;
     padding-bottom: 10px;
     animation: slideDown 0.6s ease-out;
@@ -66,6 +66,7 @@ li {
 }
 
 .sidebar-item {
+    font-family: "Roboto flex";
     display: block;
     color: #333;
     text-decoration: none;
