@@ -232,14 +232,14 @@ img:hover {
 .elegant-list {
   list-style-type: none; /* Убираем стандартные маркеры */
   padding-left: 0;
-  color: #555;
+  color: #000000;
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
 .elegant-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid #ddd; /* Разделители между элементами */
+  padding: 10px 16px;
+  border-bottom: 1px solid #1b1a1a; /* Разделители между элементами */
   transition: background-color 0.3s ease;
 }
 
