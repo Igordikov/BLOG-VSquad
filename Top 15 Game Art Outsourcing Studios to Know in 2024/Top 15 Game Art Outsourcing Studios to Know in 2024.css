@@ -291,33 +291,31 @@ color: rebeccapurple;
   } */
 
   .anchor {
-    position: relative;
-    display: inline-block;
-    color: #007BFF;
+    
+    color: #DD2F2C; 
     text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .anchor::before {
+    position: relative;
+}
+
+.anchor::before {
     content: '';
     position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
+    bottom: 0;
+    left: 50%;
+    width: 0;
     height: 2px;
-    background-color: #007BFF;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .anchor:hover {
-    color: #0056b3;
-  }
-  
-  .anchor:hover::before {
-    transform: scaleX(1);
-  }
+    background-color:#DD2F2C;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
 
+.anchor:hover::before {
+    width: 100%;
+}
+
+.anchor:hover {
+    color: #5a1817;
+}
 
   
 /* content-list-1.css */
